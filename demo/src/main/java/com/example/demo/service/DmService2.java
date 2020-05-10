@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.server.repository.ContestRepository;
+import com.example.demo.server.repository.DmContestRepository;
 import com.example.demo.server.repository.data.Contest;
 
 
@@ -13,11 +13,10 @@ import com.example.demo.server.repository.data.Contest;
 public class DmService2 {
 
 	@Autowired
-	ContestRepository contestRepo;
+	DmContestRepository contestRepo;
 	
 	public List<Contest> test() {
 		return contestRepo.findAllByOrderByLikeNumDesc();
 	}
-	
 	
 }

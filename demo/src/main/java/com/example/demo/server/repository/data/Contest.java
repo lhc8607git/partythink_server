@@ -17,8 +17,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "contest")
 public class Contest {
-	// 연습용 
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private @Column(name = "id") int id;

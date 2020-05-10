@@ -2,7 +2,7 @@ package com.example.demo;
 
 import java.time.LocalDateTime;
 
-import com.example.demo.server.repository.ContestRepository;
+import com.example.demo.server.repository.DmContestRepository;
 import com.example.demo.server.repository.data.Contest;
 
 
@@ -24,7 +24,7 @@ public class DmPTContestDump {
 	//청소년부
 	
 	
-	public static void insertContestDump(ContestRepository contestRepo) {
+	public static void insertContestDump(DmContestRepository contestRepo) {
 		/**
 		 * Algorithm
 		 */

@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.example.demo.server.repository.ContestRepository;
+import com.example.demo.server.repository.DmContestRepository;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -16,7 +16,7 @@ public class DemoApplication {
 
 	// 초기 데이터 삽입
 	@Bean
-	public CommandLineRunner runner(ContestRepository contestRepo) 
+	public CommandLineRunner runner(DmContestRepository contestRepo) 
 			throws Exception{
 		return (args)->{
 			DmPTContestDump.insertContestDump(contestRepo);
