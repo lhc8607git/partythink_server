@@ -13,5 +13,14 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
+
+	// 초기 데이터 삽입
+	@Bean
+	public CommandLineRunner runner(ContestRepository contestRepo) 
+			throws Exception{
+		return (args)->{
+			DmPTContestDump.insertContestDump(contestRepo);
+		};
+	}
 	
 }
