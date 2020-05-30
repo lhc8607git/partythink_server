@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import com.example.demo.server.repository.DmContestRepository;
+import com.example.demo.server.repository.DmUserRepository;
+
 
 @SpringBootApplication
 public class DemoApplication {
@@ -16,10 +18,11 @@ public class DemoApplication {
 
 	// 초기 데이터 삽입
 	@Bean
-	public CommandLineRunner runner(DmContestRepository contestRepo) 
-			throws Exception{
+	public CommandLineRunner runner(DmContestRepository contestRepo,
+			DmUserRepository userRepo) throws Exception{
 		return (args)->{
 			DmPTContestDump.insertContestDump(contestRepo);
+			DmPtUserDump.insertDump(userRepo);
 		};
 	}
 	

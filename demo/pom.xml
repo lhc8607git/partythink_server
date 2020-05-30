@@ -71,6 +71,28 @@
 		    <scope>provided</scope>
 		</dependency>
 		
+		<!-- Google API -->
+		<dependency>
+	    	<groupId>com.google.api-client</groupId>
+	    	<artifactId>google-api-client</artifactId>
+	    	<version>1.30.2</version>
+	   	</dependency>
+	   	<dependency>
+		    <groupId>com.google.api-client</groupId>
+		    <artifactId>google-api-client-appengine</artifactId>
+		    <version>1.23.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.google.guava</groupId>
+		    <artifactId>guava</artifactId>
+		    <version>23.6-jre</version>
+		</dependency>
+	    <dependency>
+		    <groupId>com.google.api-client</groupId>
+		    <artifactId>google-api-client-gson</artifactId>
+		    <version>1.30.4</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>

@@ -18,9 +18,6 @@ import com.example.demo.server.repository.data.Contest;
 import com.example.demo.service.DmContestService;
 
 
-
-
-
 @Controller
 @RequestMapping("/contest")
 public class DmContestController {
